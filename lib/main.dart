@@ -39,6 +39,7 @@ class _QuizPageState extends State<QuizPage> {
   void checkAnswer(bool userPickedAnswer) {
     bool correctAnswer = quizBrain.getQuestionAnswer();
     setState(() {
+      //If quiz finished alert is seen
       if (quizBrain.isFinished() == true) {
         Alert(
                 context: context,
@@ -46,8 +47,10 @@ class _QuizPageState extends State<QuizPage> {
                 desc: 'You\'ve reached the end of the quiz.')
             .show();
         quizBrain.reset();
-
+        //If quiz finished score keeper is empty
         scoreKeeper = [];
+
+        //If quiz is not finished going on
       } else {
         if (userPickedAnswer == correctAnswer) {
           scoreKeeper.add(
@@ -56,6 +59,7 @@ class _QuizPageState extends State<QuizPage> {
               color: Colors.green,
             ),
           );
+          //Shows icons according to answers,on screen
         } else {
           scoreKeeper.add(
             const Icon(
@@ -69,6 +73,7 @@ class _QuizPageState extends State<QuizPage> {
     });
   }
 
+  //Interface of main page
   @override
   Widget build(BuildContext context) {
     return Column(

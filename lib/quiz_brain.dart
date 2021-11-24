@@ -1,8 +1,10 @@
 import 'question.dart';
 
 class QuizBrain {
+  //Checks questions number
   int _questionNumber = 0;
 
+  //List of questions and answers
   final List<Question> _questionBank = [
     Question('Some cats are actually allergic to humans', true),
     Question('You can lead a cow down stairs but not up stairs.', false),
@@ -31,20 +33,24 @@ class QuizBrain {
         true),
   ];
 
+  //The function to change seen questions
   void nextQuesiton() {
     if (_questionNumber < _questionBank.length - 1) {
       _questionNumber++;
     }
   }
 
+  //Getting question texts
   String getQuestionText() {
     return _questionBank[_questionNumber].questionText;
   }
 
+  //Getting question answers
   bool getQuestionAnswer() {
     return _questionBank[_questionNumber].questionAnswer;
   }
 
+  //Checks wheter the questions is finished or not.
   bool isFinished() {
     if (_questionNumber >= _questionBank.length - 1) {
       return true;
@@ -53,6 +59,7 @@ class QuizBrain {
     }
   }
 
+  //Reset quesiton number to start again.
   void reset() {
     _questionNumber = 0;
   }
