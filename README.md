@@ -6,12 +6,6 @@
 
 ### User Interfaces
 
-<img src="assets/images/mainPage.png" width=240 height:100>
->Main page of Quizler App
+![mainPage](https://user-images.githubusercontent.com/50529379/143486579-c2088ade-fd12-482c-9beb-fc7bbf52fc03.png)
 
-<img src="assets/images/iconSeen.png" width=240 height:100>
->Icons are seen at the bottom.
-
-<img src="assets/images/alertSeen.png" width=240 height:100>
->Alert is seen at the end of the game.
 
