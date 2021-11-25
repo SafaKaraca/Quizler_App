@@ -1,4 +1,4 @@
-## Quizler App
+# Quizler App
 
 -   I developed a simple quiz app, It contains a list of questions on locally.
     There are 2 options "true" and "false", after the user selects her/his answer, the answer is checked.
@@ -6,12 +6,12 @@
 
 ### User Interfaces
 
-<img src="assets/mainPage.png" width=240 height:100>
-Main page of Quizler App
+<img src="assets/images/mainPage.png" width=240 height:100>
+>Main page of Quizler App
 
-<img src="assets/iconSeen.png" width=240 height:100>
-Icons are seen at the bottom.
+<img src="assets/images/iconSeen.png" width=240 height:100>
+>Icons are seen at the bottom.
 
-<img src="assets/alertSeen.png" width=240 height:100>
-Alert is seen at the end of the game.
+<img src="assets/images/alertSeen.png" width=240 height:100>
+>Alert is seen at the end of the game.
 
